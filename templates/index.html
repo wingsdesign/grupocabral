@@ -1,0 +1,219 @@
+{% extends 'base.html' %}{% load static %}{% block base %}
+<header class="header-area">
+    <div class="header-top bg-theme-2">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-style-2 header-spacing">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-xl-2 col-lg-3 col-md-4 col-4">
+                    <div class="logo">
+                        <a href="/">
+                            <img src="{% static 'images/logo-2.png' %}" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-10 col-lg-9 col-md-8 col-8 text-right">
+                    <div class="d-none d-lg-inline-block">
+                        <div class="main-menu">
+                            <nav id="mobile-menu">
+                                <ul id="menu-main-menu">
+                                    <li class="active-link"><a href="/">INICIAL</a></li>
+                                    <li><a href="/grupo-cabral/">GRUPO CABRAL</a></li>
+                                    <li><a href="/rafael-cabral/">RAFAEL CABRAL</a></li>
+                                    <li><a href="/filiais/">NOSSAS FILIAIS</a></li>
+                                    <li><a href="/blog/">BLOG</a></li>
+                                    <li><a href="/contato/">CONTATO</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="d-inline-block ">
+                        <div class="menu-open  ml-20 d-inline-block d-lg-none d-xl-none">
+                            <a href="javascript:void(0)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23px" height="24px">
+                                    <path fill-rule="evenodd" fill="rgb(24, 27, 29)"
+                                          d="M22.375,12.635 L8.250,12.635 C7.905,12.635 7.625,12.350 7.625,12.000 C7.625,11.649 7.905,11.365 8.250,11.365 L22.375,11.365 C22.720,11.365 23.000,11.649 23.000,12.000 C23.000,12.350 22.720,12.635 22.375,12.635 ZM22.375,3.746 L8.250,3.746 C7.905,3.746 7.625,3.461 7.625,3.111 C7.625,2.760 7.905,2.476 8.250,2.476 L22.375,2.476 C22.720,2.476 23.000,2.760 23.000,3.111 C23.000,3.461 22.720,3.746 22.375,3.746 ZM3.062,24.000 C1.371,24.000 0.000,22.607 0.000,20.888 C0.000,19.170 1.371,17.777 3.062,17.777 C4.754,17.777 6.125,19.170 6.125,20.888 C6.125,22.607 4.754,24.000 3.062,24.000 ZM3.062,19.047 C2.061,19.047 1.250,19.872 1.250,20.888 C1.250,21.905 2.061,22.730 3.062,22.730 C4.063,22.730 4.875,21.905 4.875,20.888 C4.875,19.872 4.063,19.047 3.062,19.047 ZM3.062,15.111 C1.371,15.111 0.000,13.718 0.000,12.000 C0.000,10.282 1.371,8.888 3.062,8.888 C4.754,8.888 6.125,10.282 6.125,12.000 C6.125,13.718 4.754,15.111 3.062,15.111 ZM3.062,10.159 C2.061,10.159 1.250,10.983 1.250,12.000 C1.250,13.017 2.061,13.841 3.062,13.841 C4.063,13.841 4.875,13.017 4.875,12.000 C4.875,10.983 4.063,10.159 3.062,10.159 ZM3.062,6.222 C1.371,6.222 0.000,4.829 0.000,3.111 C0.000,1.393 1.371,-0.000 3.062,-0.000 C4.754,-0.000 6.125,1.393 6.125,3.111 C6.125,4.829 4.754,6.222 3.062,6.222 ZM3.062,1.270 C2.061,1.270 1.250,2.094 1.250,3.111 C1.250,4.128 2.061,4.952 3.062,4.952 C4.063,4.952 4.875,4.128 4.875,3.111 C4.875,2.094 4.063,1.270 3.062,1.270 ZM8.250,20.254 L22.375,20.254 C22.720,20.254 23.000,20.538 23.000,20.888 C23.000,21.239 22.720,21.524 22.375,21.524 L8.250,21.524 C7.905,21.524 7.625,21.239 7.625,20.888 C7.625,20.538 7.905,20.254 8.250,20.254 Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="fix">
+    <div class="side-info side-info-2 d-lg-none">
+        <button class="side-info-close"><i class="fal fa-times"></i></button>
+        <div class="side__logo mb-25">
+            <a href="/"><img src="{% static 'images/logo-2.png' %}" alt="logo" /></a>
+        </div>
+
+        <div class="mobile-menu"></div>
+    </div>
+    <div class="side-info d-none d-lg-block text-center">
+        <button class="side-info-close"><i class="fal fa-times"></i></button>
+        <div class="side__logo mb-25">
+            <a href="/"><img src="{% static 'images/logo-2.png' %}" alt="logo" /></a>
+        </div>
+    </div>
+</div>
+<div class="offcanvas-overlay"></div>
+<main>
+    <div class="cta-area pt-140 pb-140" style="background-image: url(static/images/cta-bg-1.jpg)"
+        data-overlay="dark" data-opacity="6">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7 col-lg-8 col-md-10">
+                    <div class="section-title cta-text">
+                        <h5 class="sub-title">
+                            Seja Bem-vindo
+                        </h5>
+                        <h3 class="animated-title aniamted-title-2">	
+                            <span>
+                                GRUPO CABRAL
+                                <svg xmlns="http://www.w3.org/2000/svg" width="334px" height="33px">
+                                    <path fill-rule="evenodd" stroke="rgb(67, 130, 79)" stroke-width="4px"
+                                        stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                                        d="M2.000,25.000 C2.000,25.000 243.929,-3.529 330.000,3.000 " />
+                                </svg>
+                            </span>
+                        </h3>
+                        <p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cta-thumb">
+            <img class="jump-animation" src="{% static 'images/thumb-3.png' %}" alt="thumb">
+        </div>
+    </div><br>
+    <div class="newsletter-area-2">
+        <div class="container position-relative">
+            <div class="row justify-content-end">
+                <div class="col-xl-7 col-lg-9">
+                    <div class="newsletter-wrap mt-60 mb-60">
+                        <div class="icon"><i class="fa fa-address-card"></i></div>
+                        <div class="section-title-5">
+                            <span class="sub-title">GRUPO CABRAL</span>
+                            <h3 class="title">Conhaça um pouco mais sobre nossa história!</h3>
+                            <a href="/grupo-cabral/" class="btn btn-theme">CLIQUE AQUI!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="newsletter-area-thumb">
+                <img src="{% static 'images/thumb-18.jpg' %}" alt="thumb">
+            </div>
+        </div>
+    </div>
+    <div class="category-area pt-95 pb-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section-title-2 text-center mb-55">
+                        <span class="sub-title">
+                          CONHEÇA
+                        </span>
+                        <h3 class="title" style="font-size:50px;">
+                            NOSSAS FILIAIS
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row categories-slider">
+            	{% for itens in inicial_filiais %}
+                <div class="col-xl-3">
+                	<div class="featured-wrap featured-wrap-2 mb-30">
+                    {% if itens.site %}
+                    <div class="category-wrap-2">
+                        <a href="{{itens.site }}" target="_blank"><div class="featured-wrap thumb">
+                            <img src="{{itens.logomarca.url}}" alt="{{itens.filial}}">
+                        </div>
+                        <div class="content">
+                            <span></span>
+                            <h4><a href="{{itens.site }}" target="_blank" style="font-size: 16px;">{{itens.filial}}</a></h4>
+                        </div>
+                        <div class="read-more"><br>
+                            <a href="{{itens.site }}" target="_blank" style="background:{{itens.paleta_cor}};">
+                                <i class="far fa-arrow-right"></i>
+                            </a>
+                        </div></a>
+                    </div>
+                    {% else %}
+                    <div class="category-wrap-2">
+                        <a href="/filiais/{{itens.slug}}/"><div class="featured-wrap thumb">
+                            <img src="{{itens.logomarca.url}}" alt="{{itens.filial}}">
+                        </div>
+                        <div class="content">
+                            <span></span>
+                            <h4><a href="/filiais/{{itens.slug}}/" style="font-size: 16px;">{{itens.filial}}</a></h4>
+                        </div>
+                        <div class="read-more"><br>
+                            <a href="/filiais/{{itens.slug}}/" style="background:{{itens.paleta_cor}};">
+                                <i class="far fa-arrow-right"></i>
+                            </a>
+                        </div></a>
+                    </div>
+                    {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="cta-area-2 bg-theme-2 pt-57 pb-60">
+        <div class="container">
+            
+        </div>
+        <div class="cta-bg" style="background-image: url(static/images/bg/cta-bg-2.jpg)"></div>
+    </div>
+
+    <div class="news-area pt-100 pb-70">
+        <div class="container">
+            <div class="row mb-35">
+                <div class="col-xl-12">
+                    <div class="section-title-2 text-center">
+                        <span class="sub-title">FIQUE POR DENTRO</span>
+                        <h3 class="title"style="font-size:50px;">NOSSO BLOG</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+            	{% for itens in base_noticias_bottom %}
+                <div class="col-xl-4 col-md-6">
+                    <div class="blog-wrap wrap-2 mb-30">
+                        <a href="/blog/{{itens.slug}}/">
+                            <div class="thumb">
+                                <img src="/media/{{itens.imagen}}" alt="image">
+                            </div>
+                        </a>
+                        <div class="content">
+                            <div class="title">
+                                <h3>
+                                    <a href="/blog/{{itens.slug}}/">{{itens.titulo|upper}}</a>
+                                </h3>
+                            </div>
+                            <div class="meta">
+                                <span><i class="fal fa-calendar-alt"></i> {{itens.data|date:"d"}}, {{ itens.data|date:"M" }} {{ itens.data|date:"Y" }}</span>
+                                <span><i class="fal fa-eye"></i>{{itens.noticia_views}}</span>
+                                <span><i class="fal fa-comments"></i> {{itens.comentarios.count}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</main>
+{% include "includes/footer.html" %}
+{% endblock %}

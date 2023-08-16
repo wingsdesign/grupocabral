@@ -1,0 +1,257 @@
+{% extends 'base.html' %}{% load static %}{% block base %}
+
+<header class="header-area">
+    <div class="header-top bg-theme-2" style="background:{{object_lists.paleta_cor}};">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-style-2 header-spacing">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-xl-2 col-lg-3 col-md-4 col-4">
+                    <div class="logo">
+                        <a href="/">
+                            <img src="{% static 'images/logo-2.png' %}" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-10 col-lg-9 col-md-8 col-8 text-right">
+                    <div class="d-none d-lg-inline-block">
+                        <div class="main-menu">
+                            <nav id="mobile-menu">
+                                <ul id="menu-main-menu">
+                                    <li><a href="/">INICIAL</a></li>
+                                    <li><a href="/grupo-cabral/">GRUPO CABRAL</a></li>
+                                    <li><a href="/rafael-cabral/">RAFAEL CABRAL</a></li>
+                                    <li class="active-link"><a href="/filiais/">NOSSAS FILIAIS</a></li>
+                                    <li><a href="/blog/">BLOG</a></li>
+                                    <li><a href="/contato/">CONTATO</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="d-inline-block ">
+                        <div class="menu-open  ml-20 d-inline-block d-lg-none d-xl-none">
+                            <a href="javascript:void(0)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23px" height="24px">
+                                    <path fill-rule="evenodd" fill="rgb(24, 27, 29)"
+                                          d="M22.375,12.635 L8.250,12.635 C7.905,12.635 7.625,12.350 7.625,12.000 C7.625,11.649 7.905,11.365 8.250,11.365 L22.375,11.365 C22.720,11.365 23.000,11.649 23.000,12.000 C23.000,12.350 22.720,12.635 22.375,12.635 ZM22.375,3.746 L8.250,3.746 C7.905,3.746 7.625,3.461 7.625,3.111 C7.625,2.760 7.905,2.476 8.250,2.476 L22.375,2.476 C22.720,2.476 23.000,2.760 23.000,3.111 C23.000,3.461 22.720,3.746 22.375,3.746 ZM3.062,24.000 C1.371,24.000 0.000,22.607 0.000,20.888 C0.000,19.170 1.371,17.777 3.062,17.777 C4.754,17.777 6.125,19.170 6.125,20.888 C6.125,22.607 4.754,24.000 3.062,24.000 ZM3.062,19.047 C2.061,19.047 1.250,19.872 1.250,20.888 C1.250,21.905 2.061,22.730 3.062,22.730 C4.063,22.730 4.875,21.905 4.875,20.888 C4.875,19.872 4.063,19.047 3.062,19.047 ZM3.062,15.111 C1.371,15.111 0.000,13.718 0.000,12.000 C0.000,10.282 1.371,8.888 3.062,8.888 C4.754,8.888 6.125,10.282 6.125,12.000 C6.125,13.718 4.754,15.111 3.062,15.111 ZM3.062,10.159 C2.061,10.159 1.250,10.983 1.250,12.000 C1.250,13.017 2.061,13.841 3.062,13.841 C4.063,13.841 4.875,13.017 4.875,12.000 C4.875,10.983 4.063,10.159 3.062,10.159 ZM3.062,6.222 C1.371,6.222 0.000,4.829 0.000,3.111 C0.000,1.393 1.371,-0.000 3.062,-0.000 C4.754,-0.000 6.125,1.393 6.125,3.111 C6.125,4.829 4.754,6.222 3.062,6.222 ZM3.062,1.270 C2.061,1.270 1.250,2.094 1.250,3.111 C1.250,4.128 2.061,4.952 3.062,4.952 C4.063,4.952 4.875,4.128 4.875,3.111 C4.875,2.094 4.063,1.270 3.062,1.270 ZM8.250,20.254 L22.375,20.254 C22.720,20.254 23.000,20.538 23.000,20.888 C23.000,21.239 22.720,21.524 22.375,21.524 L8.250,21.524 C7.905,21.524 7.625,21.239 7.625,20.888 C7.625,20.538 7.905,20.254 8.250,20.254 Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="fix">
+    <div class="side-info side-info-2 d-lg-none">
+        <button class="side-info-close"><i class="fal fa-times"></i></button>
+        <div class="side__logo mb-25">
+            <a href="/"><img src="{% static 'images/logo-2.png' %}" alt="logo" /></a>
+        </div>
+
+        <div class="mobile-menu"></div>
+    </div>
+    <div class="side-info d-none d-lg-block text-center">
+        <button class="side-info-close"><i class="fal fa-times"></i></button>
+        <div class="side__logo mb-25">
+            <a href="/"><img src="{% static 'images/logo-2.png' %}" alt="logo" /></a>
+        </div>
+    </div>
+</div>
+<div class="offcanvas-overlay"></div>
+<main>
+    <div class="listing-details-area pb-100">
+        <div class="news-slider">
+            <div class="news-thumb">
+                <img src="/media/{{object_lists.slide1}}" alt="">
+            </div>
+            <div class="news-thumb">
+                <img src="/media/{{object_lists.slide2}}" alt="">
+            </div>
+            <div class="news-thumb">
+                <img src="/media/{{object_lists.slide3}}" alt="">
+            </div>
+        </div>
+        <div class="news-content">
+            <div class="container">
+                <div class="author-box-main mb-60">
+                    <div class="row align-items-center">
+                        <div class="col-xl-12 col-lg-12">
+                            <div class="news-left mb-20 mb-lg-0">
+                                <div class="author-box" style="text-align: center;">
+                                    <div class="thumb radius-img-50 mb-sm-0">
+                                        <img src="{{object_lists.logomarca.url}}" alt="" style="height: 300px;">
+                                    </div>
+                                    <div class="news-meta mb-25">
+                                        <span><i class="fal fa-eye"></i>  {{object_lists.filiais_views}} Visualizaç{{ object_lists.filiais_views|pluralize:"ão,ões" }}</span>
+                                        <span><i class="fal fa-comments"></i>{% with total=object_lists.comentarios.count %}
+            {{ total }} Comentário{{ total|pluralize }}{% endwith %}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-xl-4 col-lg-4">
+                            <div class="news-right d-flex align-items-sm-center justify-content-lg-end flex-column flex-sm-row">
+                                <div class="news-action listing-action ml-60 mt-20 mt-sm-0" style="text-align: center;">
+                                    <a href="#galeria" class="f-btn f-custom-btn" style="color:{{object_lists.paleta_cor}};"><i class="fal fa-bars"></i> VER GALERIA</a>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="content text-center">
+                    <h4 class="author-name" style="font-size: 40px; color:{{object_lists.paleta_cor}};">{{object_lists.filial}}</h4>
+                </div>
+                <hr class="mt-45 mb-45">
+                <div class="news-description">
+                    <div class="row">
+                        <div class="col-xl-8 col-lg-7">
+                            <div class="desc-box  mb-16">
+                                {{object_lists.informativo|safe}}
+                            </div>
+                            <hr class="mt-47 mb-45">
+                            {% if object_lists.photos.all %}
+                            <div class="single-widget padding-instagram mb-40" id="galeria">
+                            <h4 class="widget-title" style="color:{{object_lists.paleta_cor}};"><span style="color:{{object_lists.paleta_cor}};">//</span> GALERIA DE FOTOS</h4>
+                            <div class="grid-instagram">
+                                {% for itens in object_lists.photos.all %}
+                                <div class="insta-thumb">
+                                    <a href="{{itens.imagen_filiais.url}}"><img src="{{itens.imagen_filiais.url}}" alt=""></a>
+                                </div>
+                                {% endfor %}
+                                </div>
+                            </div>
+                            {% else %}
+                            {% endif %}
+                            <div class="service-wrapper">
+                                {% if object_lists.valores %}
+                                   <div class="single-service" >
+                                    <div class="service-icon f-left"><i class="fas fa-star" style="color:{{object_lists.paleta_cor}};"></i></div>
+                                    <div class="service-desc fix">
+                                        <h5 style="color:{{object_lists.paleta_cor}};">NOSSOS VALORES</h5>
+                                        {{object_lists.valores|safe}}
+                                    </div>
+                                </div> 
+                                {% else %}
+                                {% endif %}
+                                {% if object_lists.visao %}
+                                <div class="single-service">
+                                    <div class="service-icon f-left"><i class="fas fa-chart-line" style="color:{{object_lists.paleta_cor}};"></i></div>
+                                    <div class="service-desc fix">
+                                        <h5 style="color:{{object_lists.paleta_cor}};">NOSSA VISÃO</h5>
+                                        {{object_lists.visao|safe}}
+                                    </div>
+                                </div>
+                                {% else %}
+                                {% endif %}
+                                {% if object_lists.missao %}
+                                <div class="single-service">
+                                    <div class="service-icon f-left"><i class="fas fa-newspaper" style="color:{{object_lists.paleta_cor}};"></i></div>
+                                    <div class="service-desc fix">
+                                        <h5 style="color:{{object_lists.paleta_cor}};">NOSSA MISSÃO</h5>
+                                        {{object_lists.missao|safe}}
+                                    </div>
+                                </div>
+                                {% else %}
+                                {% endif %}
+                            </div>
+                            <hr class="mt-45 mb-45">
+                            
+                            <div class="review-box pb-36">
+                                <h5 class="has-border mb-40">{% with total=object_lists.comentarios.count %}{{ total }} Comentário{{ total|pluralize }}{% endwith %}</h5>
+                                <div class="review-list">
+                                    {% for comentario in object_lists.comentarios.all %}
+                                    <div class="single-review fix  pb-32 mb-40">
+                                        <div class="review-content fix mt-11">
+                                            <div class="content-top">
+                                                <h5>{{comentario.usuario}}: <span style="font-size:12px; color:#c0c0c0;">{{ comentario.data_criada|date:"d" }}, {{ comentario.data_criada|date:"M" }} {{comentario.data_criada|date:"Y" }}</span></h5>
+                                                <p>{{comentario.texto}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% empty %} <p>Não existe comentário nessa postagem!</p>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <div class="review-form">
+                                <h5 class="has-border mb-27">Deixe Seu Comentário</h5>
+                                <span style="font-size:14px;"><i>Seu endereço de e-mail não será publicado. Campos obrigatórios são marcados*</i></span>
+                                <form action="." method="post" enctype="multipart/form-data" id="comment-form" class="form-horizontal" >
+                                    {% csrf_token %}
+                                    <div class="review-main mb-50 mb-lg-0">
+                                        <div class="row custom-row-2">
+                                            
+                                            <div class="col-xl-6 custom-col-2">
+                                                <div class="input-group mb-20">
+                                                    <input type="text" placeholder="Nome*" id="id_usuario" name="usuario" class="input-default" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 custom-col-2">
+                                                <div class="input-group mb-20">
+                                                    <input type="email" placeholder="Email*" id="id_email" name="email" class="input-default" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12 custom-col-2">
+                                                <div class="input-group mb-25">
+                                                    <textarea class="textarea-default"  id="id_texto" name="texto" placeholder="Comentário...*" cols="30" rows="10" required></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12 custom-col-2 text-center">
+                                                <button type="submit" class="btn-default" style="background:{{object_lists.paleta_cor}};">PUBLICAR COMENTÁRIO <i class="fal fa-paper-plane"></i> </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-5">
+                            <div class="sidebar-wrapper">
+                                <div class="single-widget widget-2 mb-30">
+                                    <div class="widget-map">
+                                        <div class="map-frame pb-27">
+                                            <h4 class="widget-title" style="color:{{object_lists.paleta_cor}};"><span style="color:{{object_lists.paleta_cor}};">//</span>ONDE ESTAMOS</h4>
+                                            <iframe src="{{object_lists.localizacao}}" class="border-0" allowfullscreen="" loading="lazy"></iframe>
+                                        </div>
+                                        <div class="map-content pl-20 pr-20">
+                                            <ul class="address-list">
+                                                <li><i class="fal fa-map-marker-alt"></i>Endereço:{{object_lists.endereco}}</li>
+                                            </ul>
+                                            <div class="widget-social text-center">
+                                            {% if object_lists.whatsapp %}
+                                                <a href="https://api.whatsapp.com/send?phone={{object_lists.whatsapp}}" class="whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                                            {% else %}
+                                            {% endif %}
+                                            {% if object_lists.facebook %}
+                                                <a href="{{object_lists.facebook}}" class="facebook-btn" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                            {% else %}
+                                            {% endif %}
+                                            {% if object_lists.instagram %}
+                                                <a href="{{object_lists.instagram}}" class="instagram-btn" target="_blank"><i class="fab fa-instagram"></i></a>
+                                            {% else %}
+                                            {% endif %}
+                                            {% if object_lists.youtube %}
+                                                <a href="{{object_lists.youtube}}"  class="youtube-btn" target="_blank"><i class="fab fa-youtube"></i></a>
+                                            {% else %}
+                                            {% endif %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>
+{% include "includes/footer.html" %}
+{% endblock %}

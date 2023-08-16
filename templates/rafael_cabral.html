@@ -1,0 +1,156 @@
+{% extends 'base.html' %}{% load static %}{% block base %}
+<header class="header-area">
+    <div class="header-top bg-theme-2">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-style-2 header-spacing">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-xl-2 col-lg-3 col-md-4 col-4">
+                    <div class="logo">
+                        <a href="/">
+                            <img src="{% static 'images/logo-2.png' %}" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-10 col-lg-9 col-md-8 col-8 text-right">
+                    <div class="d-none d-lg-inline-block">
+                        <div class="main-menu">
+                            <nav id="mobile-menu">
+                                <ul id="menu-main-menu">
+                                    <li><a href="/">INICIAL</a></li>
+                                    <li><a href="/grupo-cabral/">GRUPO CABRAL</a></li>
+                                    <li class="active-link"><a href="/rafael-cabral/">RAFAEL CABRAL</a></li>
+                                    <li><a href="/filiais/">NOSSAS FILIAIS</a></li>
+                                    <li><a href="/blog/">BLOG</a></li>
+                                    <li><a href="/contato/">CONTATO</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="d-inline-block ">
+                        <div class="menu-open  ml-20 d-inline-block d-lg-none d-xl-none">
+                            <a href="javascript:void(0)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23px" height="24px">
+                                    <path fill-rule="evenodd" fill="rgb(24, 27, 29)"
+                                          d="M22.375,12.635 L8.250,12.635 C7.905,12.635 7.625,12.350 7.625,12.000 C7.625,11.649 7.905,11.365 8.250,11.365 L22.375,11.365 C22.720,11.365 23.000,11.649 23.000,12.000 C23.000,12.350 22.720,12.635 22.375,12.635 ZM22.375,3.746 L8.250,3.746 C7.905,3.746 7.625,3.461 7.625,3.111 C7.625,2.760 7.905,2.476 8.250,2.476 L22.375,2.476 C22.720,2.476 23.000,2.760 23.000,3.111 C23.000,3.461 22.720,3.746 22.375,3.746 ZM3.062,24.000 C1.371,24.000 0.000,22.607 0.000,20.888 C0.000,19.170 1.371,17.777 3.062,17.777 C4.754,17.777 6.125,19.170 6.125,20.888 C6.125,22.607 4.754,24.000 3.062,24.000 ZM3.062,19.047 C2.061,19.047 1.250,19.872 1.250,20.888 C1.250,21.905 2.061,22.730 3.062,22.730 C4.063,22.730 4.875,21.905 4.875,20.888 C4.875,19.872 4.063,19.047 3.062,19.047 ZM3.062,15.111 C1.371,15.111 0.000,13.718 0.000,12.000 C0.000,10.282 1.371,8.888 3.062,8.888 C4.754,8.888 6.125,10.282 6.125,12.000 C6.125,13.718 4.754,15.111 3.062,15.111 ZM3.062,10.159 C2.061,10.159 1.250,10.983 1.250,12.000 C1.250,13.017 2.061,13.841 3.062,13.841 C4.063,13.841 4.875,13.017 4.875,12.000 C4.875,10.983 4.063,10.159 3.062,10.159 ZM3.062,6.222 C1.371,6.222 0.000,4.829 0.000,3.111 C0.000,1.393 1.371,-0.000 3.062,-0.000 C4.754,-0.000 6.125,1.393 6.125,3.111 C6.125,4.829 4.754,6.222 3.062,6.222 ZM3.062,1.270 C2.061,1.270 1.250,2.094 1.250,3.111 C1.250,4.128 2.061,4.952 3.062,4.952 C4.063,4.952 4.875,4.128 4.875,3.111 C4.875,2.094 4.063,1.270 3.062,1.270 ZM8.250,20.254 L22.375,20.254 C22.720,20.254 23.000,20.538 23.000,20.888 C23.000,21.239 22.720,21.524 22.375,21.524 L8.250,21.524 C7.905,21.524 7.625,21.239 7.625,20.888 C7.625,20.538 7.905,20.254 8.250,20.254 Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="fix">
+    <div class="side-info side-info-2 d-lg-none">
+        <button class="side-info-close"><i class="fal fa-times"></i></button>
+        <div class="side__logo mb-25">
+            <a href="/"><img src="{% static 'images/logo-2.png' %}" alt="logo" /></a>
+        </div>
+
+        <div class="mobile-menu"></div>
+    </div>
+    <div class="side-info d-none d-lg-block text-center">
+        <button class="side-info-close"><i class="fal fa-times"></i></button>
+        <div class="side__logo mb-25">
+            <a href="/"><img src="{% static 'images/logo-2.png' %}" alt="logo" /></a>
+        </div>
+    </div>
+</div>
+<div class="offcanvas-overlay"></div>
+<main>
+    <div class="cta-area pt-50 pb-100" style="background-image: url({% static 'images/familia-cabral.jpg' %})"
+        data-overlay="dark" data-opacity="6">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12" style="display: flex; align-items: stretch; justify-content: center; padding: 60px;">
+                    <div class="section-title cta-text" style="margin-top: 38px; position: absolute;">
+                        <h3 class="animated-title aniamted-title-2">    
+                            <span>
+                                FAMÍLIA CABRAL
+                                <svg xmlns="http://www.w3.org/2000/svg" width="334px" height="33px">
+                                    <path fill-rule="evenodd" stroke="rgb(67, 130, 79)" stroke-width="4px"
+                                        stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                                        d="M2.000,25.000 C2.000,25.000 243.929,-3.529 330.000,3.000 " />
+                                </svg>
+                            </span>
+                        </h3>
+                        <p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about-area pt-100 pb-80">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-6">
+                    <div class="about-thumbs" >
+                        <div class="row custom-col">
+                            <div class="col-xl-6 col-md-6">
+                                <div class="about-thumb">
+                                    <img src="{% static 'images/thumb-15.jpg' %}" alt="thumb">
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-md-6">
+                                <div class="about-thumb">
+                                    <img src="{% static 'images/thumb-16.jpg' %}" alt="thumb">
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="about-thumb">
+                                    <img src="{% static 'images/thumb-17.jpg' %}" alt="thumb">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-text-wrap f-about-text pt-md-50 mt-xs-50">
+                        <div class="section-title-5">
+                            <span class="sub-title">Rafael Cabral</span>
+                            <div class="sub-description mb-23">
+                                Rafael Cabral inaugura bar em Goiânia que promete ser novo point
+                            </div>
+                            <p><i>
+                               Rafael Cabral é um empreendedor em ascensão em busca de novas aventuras e negócios sem se esquecer da sua paixão pelo campo.
+                            </i></p>
+                            <p>Diversificar é um conceito que Rafael Cabral carrega consigo. Aplica isso no trabalho e nas experiências. É um jovem empreendedor e se mostra um apaixonado por praticar esportes radicais. Gosta da vida no campo, mas também se arrisca em novas empreitadas. Quando se olha para ele praticando um novo esporte, por 1 segundo acredita que ele não tem foco. Logo se vê o contrário. O jovem é aventureiro na diversão, mas leva seus negócios e sua família muito a sério.</p>
+
+                            <p>É casado com Gizelle Souza e pai de 3 lindos filhos, sendo uma menina - a Luiza - e 2 meninos, os gêmeos Théo e Miguel. “Sempre valorizo a família, eles são a minha base e sempre estão comigo, presentes na minha vida”, destaca.</p>
+
+                            <p>Nos negócios, Rafael Cabral tem investimentos diversos. É empresário do setor de transporte, através da Transportadora R Cabral Transporte, localizada no município de Imperatriz no Maranhão. Também é proprietário da Fast açaí, que serve uma variedade de açaí e lanches naturais, em Goiânia (GO). É gestor e proprietário da Império Hookah Lounge, um espaço onde as pessoas podem desfrutar das melhores bebidas, snacks, drinks e essências para narguilés. O lounge bar está localizado em Goiânia (GO) e está praticamente pronto para ser inaugurado. </p>
+
+                            <p>Como homem do campo, orgulhasse de ser fazendeiro, proprietário da Fazenda R.Cabral, um verdadeiro paraíso em  meio à natureza. Ele trabalha com produção de leite. O pedaço do paraíso está localizado em Inhumas, também em Goiás.</p>
+
+                            <p>A estratégia de Rafael é explorar novas oportunidades e encontrar alternativas de maior potencial de rentabilidade, mas fazendo o que gosta. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="video-area f-video-area pt-150 pb-150 overflow-hidden" style="background-image: url({% static 'images/cta-bg-1.jpg' %})"
+         data-overlay="dark"
+         data-opacity="6">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-12 col-lg-12 mt-md-80 mt-xs-80 text-center text-lg-center">
+                    <div class="video-btn">
+                        <a href="https://www.youtube.com/watch?v=p_3ZjiZMtN4" class="popup-video"><i class="fas fa-play"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{% include "includes/footer.html" %}
+{% endblock %}
